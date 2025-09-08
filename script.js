@@ -13,7 +13,7 @@ function setBackgroundByTime() {
 
   if (jam >= 0 && jam < 10) {
     body.className = "pagi";   
-  } else if (jam >= 10 && jam < 11) {
+  } else if (jam >= 10 && jam < 17) {
     body.className = "siang";  
   } else {
     body.className = "malam";  
@@ -24,6 +24,7 @@ function setBackgroundByTime() {
 
 
 setBackgroundByTime();
+
 
 
 setInterval(setBackgroundByTime, 60000);
